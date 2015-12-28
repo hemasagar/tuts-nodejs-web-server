@@ -20,7 +20,7 @@ app.use(middleware.logger);
 });
 */
 app.get('/about', middleware.requireAuthentication, function (req, res) {
-	res.send('<h1>About us page</h1>');
+	res.send('<h1>About us page!</h1>');
 });
 
 app.use(express.static(__dirname + '/public'));
